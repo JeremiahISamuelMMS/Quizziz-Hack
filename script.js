@@ -1,3 +1,4 @@
+function Start(){
 // First we want to detect if the URL is valid
 if (window.location.href.search("quizizz.com/join/game/") == -1 && window.location.href.search("gameType=") == -1) {
     throw new Error("You aren't on a quizizz quiz. If you think this is an error please DM East_Arctica#9238 on discord!");
@@ -275,3 +276,4 @@ function QuestionChangedLoop() {
     }, 100)
 }
 QuestionChangedLoop()
+};
